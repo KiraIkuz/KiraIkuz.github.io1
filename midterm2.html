@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>This is my final form!</title>
+
+        <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+            * {
+                font-size: 16px;
+            }
+
+            body {
+            background-color: black;
+            margin-right: auto;
+        }
+
+               #background-image {
+                position: absolute;
+                background-image: url('PersonaBackground.gif');
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;
+                z-index: -2;
+            }   
+
+                #images1 {
+                    position: absolute;
+                    bottom: 0px;
+                    animation: glow 15s ease-in-out infinite; 
+                    transform: rotateX(360deg);
+                }
+
+                #images2 {
+                    position: absolute;
+                    bottom: 0px;
+                    right:0px;
+                    animation: glow 15s ease-in-out infinite; 
+                }
+
+            nav {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                z-index: -1;
+            
+            }
+
+            a button {
+                font-size: 1rem;
+                padding: 20px;
+                background-color: red; 
+                animation: glow 20s ease-in-out infinite;
+                border-width: 3px;
+                border-color: black;
+                
+            }
+
+            a button:hover {
+                font-weight: 800;
+                letter-spacing: 1px;
+
+            }
+
+            @keyframes glow {
+                0% {box-shadow: 10px 10px 30px  red;}
+                10% {box-shadow: 10px 10px 30px orange;}
+                20% {box-shadow: 10px 10px 30px yellow;}
+                30% {box-shadow: 10px 10px 30px green;}
+                40% {box-shadow: 10px 10px 30px blue}
+                50% {box-shadow: 10px 10px 30px indigo;}
+                60% {box-shadow: 10px 10px 30px violet;}
+                70% {box-shadow: 10px 10px 30px red;}
+                80% {box-shadow: 10px 10px 30px orange;}
+                90% {box-shadow: 10px 10px 30px yellow;}
+                100% {box-shadow: 10px 10px 30px green;}
+
+            }
+
+            @keyframes images1 {
+                0% {transform: rotate(0deg)}
+                50% {transform: rotate(360deg);}
+            }
+
+            #Welcome {
+                font-family: "Barriecito", system-ui;
+                color: white;
+                position: absolute;
+                top: 100px;
+                font-size: 1.75rem;
+                text-align: center;
+                background-color: red;
+                border: 8px solid black;
+                border-radius: 20%;
+            }
+
+
+            
+
+            @media only screen and (max-width: 450px) {
+                #images1 {
+                    display: none;
+                }
+
+                
+            }
+
+
+
+
+        </style>
+        
+    </head>
+
+
+
+
+
+<body>
+
+    <div class="container">
+        <div id="background-image"></div>
+        <div id="images1">
+            <img src="Digimon_World_DS_Coverart.jpg";>
+            <img src="Hades_cover_art.jpg";>
+            
+        </div>
+
+        <div id="images2">
+            <img src="p5roy.jpg";>
+
+        </div>
+
+        <nav id="navi">
+
+            <a href="https://kiraikuz.github.io/midterm1.html"><button>Home</button></a>
+            
+        </nav>
+
+        <section id="Welcome">
+            Hi there! My name is Juliette Bell. I am a student with the Media Arts and Sciences degree, and I want to be a indie game developer in the future!
+
+            <p>Some games that inspired me to become the game developer that I want to become: Digimon, Hades, and Persona.</p>
+
+            <p>I love the evolution in Digimon, and the many routes you can take. </p>
+                
+              <p>  With Hades, I really love to play roguelikes, and the aspect of there being relationships that you can create with other characters was a favorite part of mine. </p>
+                
+               <p> Lastly, with Persona, I love everything. The gameplay, the relationships, but especially the UI, if we are talking about Persona 5. That game is my favorite.</p>
+            </section>
+
+        
+
+        
+    </div>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<!--This is not my work. I am following along with the class as practice for this project. All credit goes to Professor Lallmammode at ASU.-->
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Siggy the Kitty</title>
+    <style>
+
+        
+
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        * {
+            font-size: 20px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .nav-mobile {
+            display: none;
+        }
+
+        .container {
+            height: 100vh;
+            width: 786px;
+            margin: 0 auto;
+            z-index: 0;
+        }
+
+        #sig-image {
+            position: relative;
+            background-image: url('sigman.jpeg');
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-size:cover;
+            margin: 129px auto;
+            z-index: 2;
+
+        } 
+
+         nav {
+           position: relative;
+           top: 150px;
+           width: 70%;
+           margin: auto;
+           height: 300px;
+
+         }
+
+
+        .content {
+            background-color: #E2C800;
+            width: 786px;
+            margin-top: -210px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            border-radius: 45px 45px 0px 0px;
+            padding: 20px;
+         }
+
+         
+         a button {
+            background-color: black;
+            color: white;
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+            font-style: italic;
+            font-weight: 400;
+            text-transform: lowercase;
+            text-decoration: none;
+            border-style: none;
+            border-radius: 25px;
+            padding: 35px 60px;
+            
+         }
+
+
+
+         a:hover button {
+            background-color: #E2C800;
+             color: black;
+             font-family:"Playfair Display", serif;
+             font-size: 20px;
+             font-style: italic;
+             font-weight: 800px;
+             letter-spacing: 4px;
+             text-decoration: none;
+             border-color: #000000;
+             border-width: 1px;
+             border-style: solid;
+             
+
+         }
+
+         #siggy {
+            background-color: inherit;
+            color: #000000;
+            font-family: "Playfair Display", serif;
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 800;
+            line-height: normal;
+         }
+
+
+         #about {
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+         }
+
+        #about::first-letter{
+            font-family: "Playfair Display", serif;
+            font-size: 3rem;
+            font-weight: 800;
+            font-style: oblique;
+
+        }
+    
+        @media only screen and (max-width: 450px) {
+
+            * {
+                font-size: 16px;
+            }
+
+            .container{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+            }
+            
+            
+
+             nav {
+                display:none;
+         }
+
+            .nav-mobile {
+                display: block;
+                position: fixed;
+                bottom: 0px;
+                left: 0%;
+                width: 100vw;
+                height: 50px;
+                margin: auto;
+                z-index: 1;
+            }
+
+            .nav-mobile > a button {
+            background-color: black;
+            color: white;
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+            font-style: italic;
+            font-weight: 400;
+            text-transform: lowercase;
+            text-decoration: none;
+            border-style: none;
+            border-radius: 25px;
+            padding: 10px;
+            
+         }
+
+
+
+         .nav-mobile > a:hover button {
+            background-color: #E2C800;
+             color: black;
+             font-family:"Playfair Display", serif;
+             font-size: 20px;
+             font-style: italic;
+             font-weight: 800px;
+             letter-spacing: 4px;
+             text-decoration: none;
+             border-color: #000000;
+             border-width: 1px;
+             border-style: solid;
+             
+
+         }
+
+         .content {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 5px;
+         }
+
+         #siggy {
+            color: white;
+            font-family: "Playfair Display", serif;
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 800;
+            line-height: normal;
+         }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav-mobile">
+        <a href="#about"><button>About</button></a>
+        <a href="#why"><button> Why</button></a>
+        <a href ="#contact"><button>Contact</button></a>
+    </div>
+    <div class="container">
+        <div id="sig-image"></div>
+
+        
+        <div class="content">
+            <nav id="navigation">
+            
+                <a href="#about"><button>About</button></a>
+                <a href="#why"><button> Why</button></a>
+                <a href ="#contact"><button>Contact</button></a>
+        </nav>
+
+        <p id="siggy">Siggy the Singularity</p>
+
+
+
+    <section id="about">
+        Random Random Random Blah Blah Blah al;fas;dff;laiscna;sdlias;cvlanssd;las nf[asl;sfk ja;ldfkjasd;f lkjaspfl;ajwfp;laskdkjfp;alsdsdfijassd;fl kadfl ;asdfjhjlawifjaplfiouwmep]awlifuhasdlkjnasvl am atyaping a nasd io aam ttrying to see how fast I can tyap e without looking at the keyboard and aits not 
+        </section>            
+                
+        
+
+            
+            
+        </div>
+
+
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsiveness 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        * {
+            font-size: 16px;
+        }
+        
+        body {
+            background-color: azure;
+            font-size: 16px;
+        }
+
+        #one {
+            width: 1000px;
+            height: 500px;
+            background-color: blue;
+            color: white;
+            font-size: 1em;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #one {
+                width: 300px;
+                background-color:red;
+            }
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div id="one">
+        lorem ipsum dolor
+    </div>
+
+</body>
+</html>
