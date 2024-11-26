@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dice Game</title>
+        <script>
+            function getUserName() {
+                let name = prompt("Hi there! Welcome to the game", "Some name");
+                return name;
+            }
+
+            function confirmPlay() {
+                let name = getUserName();
+                let confirmUser = confirm(`Hey ${name}, are you ready to play?`);
+                return confirmUser;
+
+            }
+
+            function rollDice() {
+                let playerReady = confirmPlay();
+
+                if(playerReady == true) {
+                    let diceRoll = Math.floor((Math.random() * 21)+1);
+
+                    console.log(diceRoll)
+                }
+            }
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+
+
+    </body>
+
+
+
+</html>
