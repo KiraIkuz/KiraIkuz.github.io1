@@ -1,0 +1,85 @@
+.fight-container{  
+    display: inline-block;
+    /*border-style: solid;
+    border-color: black;
+    position: absolute;
+    top: 50px;
+    left: 50%;*/
+}
+
+ body {
+    text-align: center;
+    background-color: cyan;
+    color: red;
+}
+
+@keyframes glow {
+    0% {box-shadow: 10px 10px 10px red;}
+    10% {box-shadow: 5px 5px 5px orange;}
+    20% {box-shadow: 10px 10px 10px yellow;}
+    30% {box-shadow: 5px 5px 5px green;}
+    40% {box-shadow: 5px 5px 5px blue;}
+    50% {box-shadow: 10px 10px 10px indigo;}
+    60% {box-shadow: 5px 5px 5px violet;}
+    70% {box-shadow: 10px 10px 10px red;}
+    80% {box-shadow: 5px 5px 5px orange;}
+    90% {box-shadow: 10px 10px 10px yellow;}
+    100% {box-shadow: 5px 5px 5px green;}
+}
+
+.fight-option {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px 3px;
+    animation: glow 20s ease-in-out infinite;
+    color: red;
+    border-width: 3px;
+    border-color: cyan;
+    padding: 40px;
+    position: relative;
+    top: 50px;
+    display: grid;
+    margin: 30px;
+}
+
+.fight-option:hover {
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    font-family: fantasy;
+    text-align: center;
+    width: auto;
+}
+
+ .proceed-button {
+    font-family: cursive;
+    color: purple;
+    padding: 20px;
+    margin: 10px;
+    animation: glow 20s ease-in-out infinite;
+}
+
+ .proceed-button:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+ }
+
+ .restart-button{ 
+    font-family: cursive;
+    color: purple;
+    padding: 20px;
+    margin: 10px;
+    animation: glow 20s ease-in-out infinite;
+ }
+
+ .restart-button:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+ }
+
+ /*#background-photo {
+    background-image: url('michael-diane-weidner-h-rP5KSC2W0-unsplash.jpg');
+    position: absolute;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+ }*/
