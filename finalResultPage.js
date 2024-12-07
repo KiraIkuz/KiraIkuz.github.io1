@@ -1,17 +1,17 @@
 let userHealth = localStorage.getItem("userHealth") || 100; 
 let computerHealth = localStorage.getItem("computerHealth") || 100;
 
-document.body.innerHTML += `<p>User's health: ${userHealth}</p>`;
-document.body.innerHTML += `<p>Computer's health: ${computerHealth}</p>`;
+document.body.innerHTML += `<p style="background-color: cyan;">User's health: ${userHealth}</p>`;
+document.body.innerHTML += `<p style="background-color: cyan;">Computer's health: ${computerHealth}</p>`;
 
-if (userHealth <= 0) {
-    document.body.innerHTML += "<h2>Computer wins!</h2>";
+if (userHealth <= 0 && computerHealth <=0) {
+    document.body.innerHTML += '<h2 style="background-color: yellow";>Its a tie!</h2>';
 }
 else if (computerHealth <= 0) {
-    document.body.innerHTML += "<h2>You win!</h2>";
+    document.body.innerHTML += '<h2 style="background-color: cyan; font-weight: 500;">You win!</h2>';
 }
 else {
-    document.body.innerHTML += "<h2>It's a tie!</h2>";
+    document.body.innerHTML += '<h2 style="background-color: black";>Computer Wins!</h2>';
 }
 
 const restartButton = document.createElement("button");
@@ -26,3 +26,8 @@ const restartButton = document.createElement("button");
     };
 
     document.body.appendChild(restartButton);
+
+fetch('(https://github.com/KiraIkuz/KiraIkuz.github.io1)')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));

@@ -9,8 +9,8 @@
 
  body {
     text-align: center;
-    background-color: cyan;
     color: red;
+    background-image: url('PersonaBackground.gif');
 }
 
 @keyframes glow {
@@ -76,10 +76,24 @@
     letter-spacing: 1px;
  }
 
- /*#background-photo {
-    background-image: url('michael-diane-weidner-h-rP5KSC2W0-unsplash.jpg');
+ #background-photo {
+    background-image: url('PersonaBackground.gif');
+    background-image: fixed;
     position: absolute;
-    background-size: cover;
-    width: 100vw;
+    z-index: -3;
+    background-size: contain;
+    width: 100%;
     height: 100vh;
- }*/
+ }
+
+ h1.mTitle{
+    font-weight: 20000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: red;
+    color: cyan;
+
+ }
+
+ 
+
+

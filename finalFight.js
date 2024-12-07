@@ -32,10 +32,10 @@ if (userHealth <= 0 || computerHealth <= 0) {
     window.location.href = "finalResult.html";
 }
 else {
-    document.body.innerHTML += `<h2>You chose Attack for ${attackPoints} damage!</h2>`;
-    document.body.innerHTML += `<h2>The Computer chose Attack for ${computerChoice} damage!</h2>`
-    document.body.innerHTML += `<p>Computer's Health: ${computerHealth}</p>`;
-    document.body.innerHTML += `<p>User's Health: ${userHealth}</p>`;
+    document.body.innerHTML += `<h1 style="background-color: cyan; width: auto; font-weight: bolder;">You chose Attack for ${attackPoints} damage!</h1>`;
+    document.body.innerHTML += `<h2 style="background-color: black; width: auto; font-weight: bolder;">The Computer chose Attack for ${computerChoice} damage!</h2>`
+    document.body.innerHTML += `<p style="background-color: black; width: auto; font-weight: bolder;">Computer's Health: ${computerHealth}</p>`;
+    document.body.innerHTML += `<p style="background-color: cyan; width: auto; font-weight: bolder;">User's Health: ${userHealth}</p>`;
 
     const proceedButton = document.createElement("button");
 
